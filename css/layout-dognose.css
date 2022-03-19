@@ -10,10 +10,9 @@
 .header-button {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
-    font-size: xx-large;
+    font-size: 22pt;
     color: white;
     border: 2px dashed rgba(255, 255, 255, 0);
-    width: 30%;
     cursor: pointer;
     transition: all 0.6s 0s ease;
 }
@@ -26,7 +25,7 @@
     width: 100%;
     margin-top: 32px;
     table-layout: fixed;
-    min-width: 700pt;
+    min-width: 500pt;
 }
 
 .header {
@@ -54,11 +53,13 @@
     min-height: 250pt;
     transition: all 1s 0s ease;
     padding: 10pt;
+    background: rgba(255, 255, 255, 0);
 }
 
 .history-box:hover {
     border: 2px solid #FFF;
     right: 10pt;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .history-list {
@@ -82,6 +83,146 @@
     transition: all 0.5s 0s ease;
 }
 
+.history-toggle {
+    width: 15pt;
+}
+
 .history-box:hover .label {
-    color: #888;
+    color: #444;
+}
+
+.footer {
+    width: 78%;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-width: 2px 0px 0px 0px;
+    padding: 8pt;
+    font-size: 10pt;
+    color: #444;
+}
+
+.body-box {
+    min-height: 465pt;
+    width: 80%;
+    margin: 12pt auto;
+    transition: all 1s 0s ease;
+    border: 2px dashed #466;
+    padding: 3pt 3pt;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+.body-box img {
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    color: rgb(65, 110, 126);
+}
+
+a:hover {
+    color: rgb(30, 76, 109);
+}
+
+a:visited {
+    color: rgb(106, 124, 124);
+}
+
+.post-button {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15pt;
+    margin: 25pt 0%;
+    transition: opacity 1s 0s ease;
+    min-height: 64pt;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 25pt;
+    box-sizing: border-box;
+    opacity: 0;
+    vertical-align: top;
+    user-select: none;
+}
+
+.post-preview {
+    max-height: 96pt;
+    overflow: hidden;
+    font-size: 11pt;
+    opacity: 0.7;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    padding: 8pt;
+    margin: 8pt 2pt 8pt 2pt;
+}
+
+.post-button:hover {
+    background: rgba(255, 255, 255, 0.7);
+    cursor: auto;
+}
+
+.post-label-title {
+    color: #333;
+    font-size: 14pt;
+    font-weight: 800;
+}
+
+.post-detail {
+    font-size: 10pt;
+    color: rgba(126, 126, 126, 0.9);
+}
+
+.posts-box {
+    width: 100%;
+    margin: 0pt auto;
+    padding: 0px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.history-item {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    font-weight: 300;
+    text-align: left;
+    width: auto;
+    margin: 2pt 1pt 12pt 4pt;
+    cursor: pointer;
+}
+
+.history-date {
+    font-size: 10pt;
+    float: right;
+}
+
+.info {
+    width: 70%;
+    padding: 12pt;
+    box-sizing: border-box;
+    margin: 12pt auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1000;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 33pt 22pt;
+    min-height: 455pt;
 }

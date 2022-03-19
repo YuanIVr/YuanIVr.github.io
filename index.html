@@ -8,17 +8,30 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
     <meta name="generator" content="Hexo 5.4.1"></head>
     <body>
+        
         <link rel="stylesheet" type="text/css" href="/css/layout-dognose.css" />
 <div class="header">
+    <div class="mask"></div>
+    <div style="display: none;" id="url_lib">
+        {
+            "home": "/",
+            "blogs": "/archives",
+            "about": "/2022/03/18/about-us/",
+            "tools": "/2022/03/18/tools/"
+        }
+    </div>
+    <script>
+        let urls = JSON.parse(document.getElementById('url_lib').innerHTML)
+    </script>
     <table class="header-table">
         <tr>
-            <th class="header-button">主页[object Object]</th>
-            <th class="header-button">文章</th>
-            <th class="header-button">关于我们</th>
-            <th class="header-button">工具</th>
+            <th class="header-button" onclick="location.href = (urls.home)">Hy Xu&#39;s Blogs</th>
+            <th class="header-button" onclick="location.href = (urls.blogs)">文章</th>
+            <th class="header-button" onclick="location.href = (urls.about)">关于我们</th>
+            <th class="header-button" onclick="location.href = (urls.tools)">工具</th>
         </tr>
         <tr>
-            <td colspan="9">
+            <td colspan="4">
                 <div class="header-line"></div>
             </td>
         </tr>
@@ -38,31 +51,69 @@
             }
         });
         document.getElementById('background_image').addEventListener('load', checkViewport)
-        setInterval(checkViewport, 1000);
+        setTimeout(checkViewport, 100);
     </script>
 </div>
-        hello <button>游玩</button>
+        <div class="body-box">
+            
+                <script>
+    let homePath = '2022/03/18/home/'
+    location.href = homePath
+</script>
+            
+        </div>
+        <script>
+            setTimeout(() => {
+                let content = document.getElementsByClassName('body-box')[0]
+                if (innerHeight > innerWidth) {
+                    content.style.width = '100%';
+                } else {
+                    content.style.width = '70%';
+                }
+            }, 100)
+        </script>
         <div>
-    <button>FOTTER</button>
+    <div class="info">
+        
+        
+    </div>
+    <div class="footer">
+        @find me: <br />
+        <a target="_blank" rel="noopener" href="https://github.com/luncybloont">github.com/luncybloont</a> 
+        or <a target="_blank" rel="noopener" href="https://github.com/yuanivr">github.com/yuanivr</a> <br />
+        ( •̀ ω •́ )✧
+    </div>
 </div>
         <link rel="stylesheet" type="text/css" href="/css/layout-dognose.css" />
 <div class="history-box">
-    <table>
+    <table style="width: 100%;">
         <tr>
-            <th>
+            <th class="history-toggle">
                 <div class="label">
                     看看其他
                 </div>
             </th>
             <th>
                 <div class="history-list">
+                    <div class="history-item">
+                        最新
+                        
+                        <span class="history-date" onclick="location.href = '/archives'">more...</span>
+                    </div>
                     
-                        <div>
-                            常来看看新功能
+                    
+                        <div class="history-item" onclick="location.href = '/2022/03/07/hello-world/'">
+                            @ 常来看看新功能
+                            <span class="history-date">
+                                2022-03-19
+                            </span>
                         </div>
                     
-                        <div>
-                            云使能技术调研
+                        <div class="history-item" onclick="location.href = '/2022/03/16/cloud-enablement/'">
+                            @ 云使能技术调研
+                            <span class="history-date">
+                                2022-03-19
+                            </span>
                         </div>
                     
                 </div>
