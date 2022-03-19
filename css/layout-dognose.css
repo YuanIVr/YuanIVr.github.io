@@ -15,6 +15,7 @@
     border: 2px dashed rgba(255, 255, 255, 0);
     cursor: pointer;
     transition: all 0.6s 0s ease;
+    user-select: none;
 }
 
 .header-button:hover {
@@ -59,7 +60,7 @@
 .history-box:hover {
     border: 2px solid #FFF;
     right: 10pt;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .history-list {
@@ -81,6 +82,7 @@
     width: 14pt;
     margin: 1px 16px 1px 0px;
     transition: all 0.5s 0s ease;
+    user-select: none;
 }
 
 .history-toggle {
@@ -89,6 +91,7 @@
 
 .history-box:hover .label {
     color: #444;
+    border: 2px dashed rgba(55, 55, 55, 0.3);
 }
 
 .footer {
@@ -118,6 +121,7 @@
     display: block;
     margin-left: 50%;
     transform: translateX(-50%);
+    max-width: 80%;
 }
 
 a {
@@ -225,4 +229,10 @@ a:visited {
     background: rgba(255, 255, 255, 0.3);
     padding: 33pt 22pt;
     min-height: 455pt;
+}
+
+.page-title {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }

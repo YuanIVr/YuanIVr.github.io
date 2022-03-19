@@ -36,23 +36,6 @@
             </td>
         </tr>
     </table>
-    <img id="background_image" class="background" src="/sea.png" />
-    <script>
-        let checkViewport = (function() {
-            let bg = document.getElementById('background_image')
-            if (window.innerWidth > window.innerHeight) {
-                bg.style.width = '100%'
-                bg.style.height = 'auto'
-                bg.style.left = 0 + 'px'
-            } else {
-                bg.style.width = 'auto'
-                bg.style.height = '100%'
-                bg.style.left = (-((bg.width * window.innerHeight / bg.height) - window.innerWidth) / 2) + 'px'
-            }
-        });
-        document.getElementById('background_image').addEventListener('load', checkViewport)
-        setTimeout(checkViewport, 100);
-    </script>
 </div>
         <div class="body-box">
             
@@ -64,6 +47,25 @@
 
             
         </div>
+        <img id="background_image" class="background" src="/sea.png" />
+        <script>
+            let checkViewport = (function() {
+                let bg = document.getElementById('background_image')
+                if (window.innerWidth > window.innerHeight) {
+                    bg.style.width = '100%'
+                    bg.style.height = 'auto'
+                    bg.style.left = '0px'
+                    bg.style.top = (-((bg.height * window.innerWidth / bg.width) - window.innerHeight) / 2) + 'px'
+                } else {
+                    bg.style.width = 'auto'
+                    bg.style.height = '100%'
+                    bg.style.left = (-((bg.width * window.innerHeight / bg.height) - window.innerWidth) / 2) + 'px'
+                    bg.style.top = '0px'
+                }
+            });
+            document.getElementById('background_image').addEventListener('load', checkViewport)
+            setTimeout(checkViewport, 100);
+        </script>
         <script>
             setTimeout(() => {
                 let content = document.getElementsByClassName('body-box')[0]
