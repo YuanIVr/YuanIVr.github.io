@@ -1,0 +1,87 @@
+.background {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -99999;
+}
+
+.header-button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: xx-large;
+    color: white;
+    border: 2px dashed rgba(255, 255, 255, 0);
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.6s 0s ease;
+}
+
+.header-button:hover {
+    border: 2px dashed rgba(255, 255, 255, 1);
+}
+
+.header-table {
+    width: 100%;
+    margin-top: 32px;
+    table-layout: fixed;
+    min-width: 700pt;
+}
+
+.header {
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.header-line {
+    width: 100%;
+    margin: 0px;
+    height: 2px;
+    background: white;
+    color: white;
+    display: block;
+}
+
+.history-box {
+    width: 230pt;
+    border: 2px solid rgba(255, 255, 255, 0);
+    position: fixed;
+    right: -200pt;
+    top: 124pt;
+    min-height: 250pt;
+    transition: all 1s 0s ease;
+    padding: 10pt;
+}
+
+.history-box:hover {
+    border: 2px solid #FFF;
+    right: 10pt;
+}
+
+.history-list {
+    opacity: 0;
+    transition: all 0.5s 0s ease;
+}
+
+.history-box:hover .history-list {
+    opacity: 1;
+}
+
+.label {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    color: #FFF;
+    font-size: 14pt;
+    padding: 3px 7px 2px 1px;
+    border: 2px dashed rgba(255, 255, 255, 0.8);
+    width: 14pt;
+    margin: 1px 16px 1px 0px;
+    transition: all 0.5s 0s ease;
+}
+
+.history-box:hover .label {
+    color: #888;
+}
