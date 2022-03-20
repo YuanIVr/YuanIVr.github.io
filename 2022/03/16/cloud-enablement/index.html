@@ -43,17 +43,25 @@
     
         <div class="page-title">云使能技术调研</div>
     
-    <h3 id="云使能技术介绍"><a href="#云使能技术介绍" class="headerlink" title="云使能技术介绍"></a>云使能技术介绍</h3><h4 id="1、什么是云使能？"><a href="#1、什么是云使能？" class="headerlink" title="1、什么是云使能？"></a>1、什么是云使能？</h4><p>包括数据中心技术、虚拟化技术、Web技术等技术等和云有关的技术的集合。</p>
+    <h3 id="云使能技术介绍"><a href="#云使能技术介绍" class="headerlink" title="云使能技术介绍"></a>云使能技术介绍</h3><h4 id="1、什么是云使能？"><a href="#1、什么是云使能？" class="headerlink" title="1、什么是云使能？"></a>1、什么是云使能？</h4><p>包括数据中心技术、虚拟化技术、Web技术等技术等和云有关的技术的集合。宽带网络和Internet架构为云服务的基础。</p>
 <h4 id="2、云使能技术的主要组件："><a href="#2、云使能技术的主要组件：" class="headerlink" title="2、云使能技术的主要组件："></a>2、云使能技术的主要组件：</h4><ul>
-<li><p>数据中心技术</p>
+<li><p><strong>数据中心技术</strong><br>什么是数据中心：专门的IT基础设施，用于集中存放IT资源。例如数据库、服务等。</p>
 </li>
-<li><p>虚拟化技术</p>
+<li><p><strong>虚拟化技术</strong><br>将服务器的IT资源抽象为客户使用的虚拟服务器，客户使用虚拟服务器运行着的客户操作系统。虚拟化具有硬件无关性、隔离、服务区整合（分区）的特点，可以实现资源复制，减少性能开销，提高特殊硬件兼容性和可移植性。分为基于硬件的虚拟化、基于操作系统的虚拟化及虚拟化管理。</p>
 </li>
-<li><p>Web技术</p>
+<li><p><strong>Web技术</strong><br>由Web服务器和Web客户端组成的用于访问互联网IT资源的系统。Web技术架构由统一资源定位符、超文本传输协议、标记语言三个基本元素构成。</p>
 </li>
-<li><p>多租户技术</p>
+<li><p><strong>多租户技术</strong><br>将多个客户使用同一个应用，但彼此之间相互隔离，互不干扰，每个用户如同独占一个应用。其特点可概括为：<br>使用隔离、数据安全，可恢复性，应用升级，可扩展消费，使用计费，数据层隔离</p>
 </li>
-<li><p>服务技术</p>
+<li><p><strong>服务技术</strong><br>基于Web的服务(如Web服务和REST服务)依靠非专有通信和技术接口定义来建立基于Web技术的标准通信框架，服务代理提供事件驱动运行时处理，适用于云中大量的功能。许多代理都自动部署在操作系统和基于云的产品中，服务中间件(如ESB和业务流程平台)可以在云上部署。</p>
+</li>
+</ul>
+<h4 id="3、列举三种虚拟化软件及其特点"><a href="#3、列举三种虚拟化软件及其特点" class="headerlink" title="3、列举三种虚拟化软件及其特点"></a>3、列举三种虚拟化软件及其特点</h4><ul>
+<li><p><strong>KVM</strong>：基于内核的虚拟机 Kernel-based Virtual Machine（KVM）是一种内建于 Linux® 中的开源虚拟化技术。具体而言，KVM 可帮助您将 Linux 转变为虚拟机监控程序，使主机计算机能够运行多个隔离的虚拟环境，即虚拟客户机或虚拟机（VM）。由于 KVM 属于现有的 Linux 代码，因此它能立即享受每一项新的 Linux 功能、修复和发展，无需进行额外工程。</p>
+</li>
+<li><p><strong>Hyper-V</strong>：Hyper-V 提供硬件虚拟化。 这意味着每个虚拟机都在虚拟硬件上运行。 Hyper-V 允许你创建虚拟硬盘驱动器、虚拟交换机以及许多其他虚拟设备，所有这些都可以添加到虚拟机中。</p>
+</li>
+<li><p><strong>VMware</strong>：借助 VMware Cross-Cloud Services 控制多云环境，它是一个集成的 SaaS 解决方案组合，可跨云平台构建、运行、管理和保护所有应用。</p>
 </li>
 </ul>
 
@@ -125,15 +133,15 @@
                     </div>
                     
                     
-                        <div class="history-item" onclick="location.href = '/2022/03/07/hello-world/'">
-                            @ 常来看看新功能
+                        <div class="history-item" onclick="location.href = '/2022/03/16/cloud-enablement/'">
+                            @ 云使能技术调研
                             <span class="history-date">
                                 2022-03-19
                             </span>
                         </div>
                     
-                        <div class="history-item" onclick="location.href = '/2022/03/16/cloud-enablement/'">
-                            @ 云使能技术调研
+                        <div class="history-item" onclick="location.href = '/2022/03/07/hello-world/'">
+                            @ 常来看看新功能
                             <span class="history-date">
                                 2022-03-19
                             </span>
