@@ -124,6 +124,22 @@
     max-width: 80%;
 }
 
+.body-box table {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.body-box td {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5pt;
+    background: rgba(210, 223, 123, 0.1);
+}
+
+.body-box th {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5pt;
+    background: rgba(10, 123, 233, 0.1);
+}
+
 a {
     color: rgb(65, 110, 126);
 }
@@ -236,3 +252,5 @@ a:visited {
     transform: translateX(-50%);
     text-align: center;
 }
+
+
